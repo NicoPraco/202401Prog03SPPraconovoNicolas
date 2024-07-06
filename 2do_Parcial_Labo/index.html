@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Modelo de Parcial | 2º Parcial</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="./img/icons/exam.png" />
+    </head>
+    <body>
+        <div id="contenedor-spinner">
+            <div class="spinner"></div>
+        </div>
+
+        <div id="content-border">
+            <div class="main-content">
+                <div id="list-form">
+                    <header id="header-element">
+                        <h1 id="title">Formulario Datos</h1>
+                        <h2 id="name">Nicolás Praconovo</h2>
+                        <h3 id="subtitle">Parcial | 2º Parcial</h3>
+                    </header>
+
+                    <main id="main-element">
+                        <table id="table-content">
+                            <thead id="table-headers">
+                                <tr>
+                                    <th id="id-header">Id</th>
+                                    <th id="name-header">Nombre</th>
+                                    <th id="surname-header">Apellido</th>
+                                    <th id="birthday-header">Fecha de Nacimiento</th>
+                                    <th id="dni-header">DNI</th>
+                                    <th id="origin-country-header">Pais de Origen</th>
+                                    <th id="modify-btn-header">--</th>
+                                    <th id="delete-btn-header">--</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="table-contents"></tbody>
+                        </table>
+                        <button id="add-btn" type="button">Agregar Elemento</button>
+                    </main>
+                </div>
+
+                <div id="abm-form" class="hidden">
+                    <h2 id="abm-form-title">Formulario ABM</h2>
+                    <h3 id="abm-form-action-title">A</h3>
+
+                    <div id="abm-form-elements">
+                        <label for="abm-form-id">Id</label>
+                        <input type="number" id="abm-form-id" readonly />
+
+                        <label for="abm-form-name">Nombre</label>
+                        <input type="text" id="abm-form-name" />
+
+                        <label for="abm-form-surname">Apellido</label>
+                        <input type="text" id="abm-form-surname" />
+
+                        <label for="abm-form-birthday">Fecha de Nacimiento</label>
+                        <input type="number" id="abm-form-birthday" />
+
+                        <label for="abm-form-type">Tipo</label>
+                        <select id="abm-form-type">
+                            <option value="Ciudadano" selected>Ciudadano</option>
+                            <option value="Extranjero">Extranjero</option>
+                        </select>
+
+                        <label for="abm-form-dni" id="abm-form-lbl-dni">DNI</label>
+                        <input type="number" id="abm-form-dni" />
+
+                        <label for="abm-form-origen-country" id="abm-form-lbl-origen-country">Pais de Origen</label>
+                        <input type="text" id="abm-form-origen-country" />
+
+                        <button id="abm-form-accept">Aceptar</button>
+                        <button id="abm-form-cancel">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="clases/persona.js"></script>
+        <script type="module" src="clases/ciudadano.js"></script>
+        <script type="module" src="clases/extranjero.js"></script>
+
+        <!-- 
+        <script type="module" src="functions.js"></script> 
+        -->
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
